@@ -5,7 +5,7 @@ const translations = {
         "en": "Home"
     },
     "nav.about": {
-        "fr": "À propos",
+        "fr": "Apropos",
         "en": "About"
     },
     "nav.skills": {
@@ -480,8 +480,8 @@ const translations = {
         "en": "Senior Technician in Computer Networks and Security, passionate about innovation and computer security."
     },
     "footer.copyright": {
-        "fr": "© 2024 Abderrahmane Aroussi. Tous droits réservés.",
-        "en": "© 2024 Abderrahmane Aroussi. All rights reserved."
+        "fr": "© 2026 Abderrahmane Aroussi. Tous droits réservés.",
+        "en": "© 2026 Abderrahmane Aroussi. All rights reserved."
     },
     
     // Modal
@@ -497,4 +497,5 @@ const translations = {
         "fr": "Fermer",
         "en": "Close"
     }
+
 };
