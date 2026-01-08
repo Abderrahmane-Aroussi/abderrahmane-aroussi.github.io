@@ -25,3 +25,28 @@ Un portfolio professionnel moderne et responsive pour présenter mes compétence
 - **Local Storage** : Sauvegarde des préférences utilisateur
 
 ## 📁 Structure des Fichiers
+
+Abderrahmane_Aroussi_Portfolio/
+│
+├── index.html              
+│
+├── assets/      
+│   ├── docs/
+│   │   └── CV_Abderrahmane_AROUSSI.pdf          
+│   │
+│   ├── css/                
+│   │   └── style.css      
+│   │
+│   ├── js/                 
+│   │   ├── main.js         
+│   │   └── translations.js 
+│   │
+│   └── images/            
+│       ├── My_Pictur.png   
+│       ├── Analyse_de_Sécurité_SSH_vs_Telnet_&_SDR.png 
+│       ├── Outil_de_Simulation_IP_Fragmentation_Calculator.png  
+│       ├── Plateforme_Web_Phone_Shop_&_Repair_Hub.png 
+│       ├── Plateforme_Web_Phone_Shop_&_Repair_Hub.png   
+│       └── Plateforme_Web_Phone_Shop_&_Repair_Hub.png   
+│
+└── README.md
