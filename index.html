@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abderrahmane Aroussi | Portfolio Professionnel</title>
+    <meta name="description" content="Portfolio professionnel de Abderrahmane Aroussi, Technicien Supérieur en Réseaux Informatiques et Sécurité">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="#home">
+                    <div class="logo-icon">AA</div>
+                    <span class="logo-text">A.AROUSSI</span>
+                </a>
+            </div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#home" class="nav-link" data-i18n="nav.home">Accueil</a></li>
+                    <li><a href="#about" class="nav-link" data-i18n="nav.about">À propos</a></li>
+                    <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Compétences</a></li>
+                    <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Projets</a></li>
+                    <li><a href="#experience" class="nav-link" data-i18n="nav.experience">Expérience</a></li>
+                    <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-controls">
+                <div class="language-switcher">
+                    <button id="langToggle" class="btn-lang" aria-label="Changer de langue">
+                        <span class="lang-flag">🇫🇷</span>
+                        <span class="lang-text">FR</span>
+                    </button>
+                </div>
+                <div class="theme-switcher">
+                    <button id="themeToggle" class="btn-theme" aria-label="Changer de thème">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+                <div class="menu-toggle">
+                    <button id="menuToggle" class="btn-menu" aria-label="Menu de navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- القائمة الجانبية للموبايل -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <span class="mobile-logo">A.AROUSSI</span>
+            <button id="mobileMenuClose" class="btn-close-menu" aria-label="Fermer le menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav-links">
+            <ul>
+                <li><a href="#home" class="mobile-nav-link" data-i18n="nav.home">Accueil</a></li>
+                <li><a href="#about" class="mobile-nav-link" data-i18n="nav.about">À propos</a></li>
+                <li><a href="#skills" class="mobile-nav-link" data-i18n="nav.skills">Compétences</a></li>
+                <li><a href="#projects" class="mobile-nav-link" data-i18n="nav.projects">Projets</a></li>
+                <li><a href="#experience" class="mobile-nav-link" data-i18n="nav.experience">Expérience</a></li>
+                <li><a href="#contact" class="mobile-nav-link" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-footer">
+            <div class="mobile-language-switcher">
+                <button id="mobileLangToggle" class="btn-lang-mobile">
+                    <span class="lang-flag">🇫🇷</span>
+                    <span class="lang-text">Français</span>
+                </button>
+            </div>
+            <div class="mobile-social">
+                <a href="https://github.com/Abderrahmane-Aroussi" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/abderrahmane-aroussi" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- المحتوى الرئيسي -->
+    <main>
+        <!-- قسم البطل -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h5 class="hero-subtitle" data-i18n="hero.greeting">Bonjour, je suis</h5>
+                        <h1 class="hero-title">Abderrahmane <span class="highlight">Aroussi</span></h1>
+                        <h2 class="hero-role" data-i18n="hero.role">Technicien Supérieur en Réseaux & Sécurité</h2>
+                        <p class="hero-description" data-i18n="hero.description">
+                            Passionné par la cybersécurité et l'administration système. Je conçois et implémente des solutions sécurisées pour optimiser les infrastructures IT.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-primary" data-i18n="hero.viewProjects">Voir mes projets</a>
+                            <a href="#contact" class="btn btn-secondary" data-i18n="hero.contactMe">Me contacter</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="profile-container">
+                            <img src="assets/images/My_Pictur.png" alt="Abderrahmane Aroussi" class="profile-img" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80'">
+                            <div class="profile-frame"></div>
+                            <div class="profile-badge">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label" data-i18n="stats.projects">Projets</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">2</span>
+                        <span class="stat-label" data-i18n="stats.experience">Années d'expérience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label" data-i18n="stats.languages">Langues</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label" data-i18n="stats.dedication">Engagement</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم عني -->
+        <section id="about" class="about section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="about.title">À propos de moi</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3 class="about-subtitle" data-i18n="about.subtitle">Technicien Passionné par la Cybersécurité</h3>
+                        <p data-i18n="about.p1">
+                            Étudiant en 2ème année DUT à l'École Supérieure de Technologie de Guelmim, je combine une solide base théorique avec une capacité prouvée à développer des solutions logicielles pratiques (Python/Java) pour résoudre des problèmes réels.
+                        </p>
+                        <p data-i18n="about.p2">
+                            Mon expérience s'étend de la maintenance réseau en environnement institutionnel (Ministère de la Justice) à la participation active dans la communauté tech (CTF, Clubs). Rigoureux et polyvalent, je cherche à contribuer à la sécurisation et à l'optimisation des infrastructures IT.
+                        </p>
+                        <div class="about-info">
+                            <div class="info-item">
+                                <span class="info-label" data-i18n="about.name">Nom:</span>
+                                <span class="info-value">Abderrahmane Aroussi</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label" data-i18n="about.email">Email:</span>
+                                <span class="info-value">abderrahmanearoussi166@gmail.com</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label" data-i18n="about.phone">Téléphone:</span>
+                                <span class="info-value">+212 613735878</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label" data-i18n="about.location">Localisation:</span>
+                                <span class="info-value">Guelmim, Maroc</span>
+                            </div>
+                        </div>
+                        <a href="assets/docs/CV_Abderrahmane_AROUSSI.pdf" class="btn btn-primary" data-i18n="about.downloadCV" target="_blank">
+                            <i class="fas fa-download"></i> Télécharger CV
+                        </a>
+                    </div>
+                    <div class="about-education">
+                        <h3 class="education-title" data-i18n="about.education">Formation</h3>
+                        <div class="education-timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">2024 – présent</div>
+                                <div class="timeline-content">
+                                    <h4>DUT - Réseaux Informatiques et Sécurité</h4>
+                                    <p>École Supérieure de Technologie de Guelmim (ESTG)</p>
+                                    <ul>
+                                        <li data-i18n="education.skill1">Administration Linux/Windows</li>
+                                        <li data-i18n="education.skill2">Routing & Switching (CCNA)</li>
+                                        <li data-i18n="education.skill3">Cryptographie et Sécurité</li>
+                                        <li data-i18n="education.skill4">Développement Web & Logiciel</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم المهارات -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="skills.title">Compétences Techniques</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle" data-i18n="skills.subtitle">Un éventail de compétences en réseaux, sécurité et développement</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <div class="skill-category-header">
+                            <i class="fas fa-network-wired"></i>
+                            <h3 data-i18n="skills.network">Réseaux</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <span class="skill-name">TCP/IP</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Cisco Packet Tracer</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">VLAN & Routing</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 88%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Wireshark</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 82%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="skill-category-header">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3 data-i18n="skills.security">Sécurité</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <span class="skill-name">Ethical Hacking</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Firewall Configuration</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Cryptographie</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 78%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">VPN</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="skill-category-header">
+                            <i class="fas fa-code"></i>
+                            <h3 data-i18n="skills.development">Développement</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 92%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Java</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">HTML/CSS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">SQL</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 88%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="skill-category-header">
+                            <i class="fas fa-server"></i>
+                            <h3 data-i18n="skills.admin">Administration</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <span class="skill-name">Linux</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Windows Server</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">VirtualBox</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Git/GitHub</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 88%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="languages-section">
+                    <h3 class="languages-title" data-i18n="skills.languages">Langues</h3>
+                    <div class="languages-grid">
+                        <div class="language-item">
+                            <span class="language-name" data-i18n="languages.arabic">Arabe</span>
+                            <span class="language-level" data-i18n="languages.native">Langue maternelle</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="language-name" data-i18n="languages.french">Français</span>
+                            <span class="language-level" data-i18n="languages.fluent">Courant (Professionnel)</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="language-name" data-i18n="languages.english">Anglais</span>
+                            <span class="language-level" data-i18n="languages.technical">Fluent</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="language-name" data-i18n="languages.tamazight">Tamazight</span>
+                            <span class="language-level" data-i18n="languages.native">Fluent</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم المشاريع -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="projects.title">Mes Projets</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle" data-i18n="projects.subtitle">Une sélection de projets réalisés en cybersécurité et développement</p>
+                </div>
+                <div class="projects-grid">
+                    <!-- Projet 1 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/Système_de_Détection_d'Intrusion_N-IDS.png" alt="Système de Détection d'Intrusion N-IDS" onerror="this.src='https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'">
+                            <div class="project-overlay">
+                                <div class="project-tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">Scapy</span>
+                                    <span class="tag">Flask</span>
+                                    <span class="tag">SQLite</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title" data-i18n="projects.project1.title">Système de Détection d'Intrusion (N-IDS)</h3>
+                            <p class="project-description" data-i18n="projects.project1.description">
+                                Sonde réseau capable d'analyser le trafic en temps réel pour détecter les scans de ports et activités suspectes avec tableau de bord web.
+                            </p>
+                            <div class="project-features">
+                                <span class="feature" data-i18n="projects.features.realtime">Analyse en temps réel</span>
+                                <span class="feature" data-i18n="projects.features.dashboard">Dashboard web</span>
+                                <span class="feature" data-i18n="projects.features.detection">Détection d'intrusion</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" data-i18n="projects.viewDetails">Voir détails</a>
+                                <a href="https://github.com/Abderrahmane-Aroussi" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projet 2 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/Serveur_de_Messagerie_Sécurisé_Chat_&_Directory.png" alt="Serveur de Messagerie Sécurisé" onerror="this.src='https://images.unsplash.com/photo-1587560699334-cc4ff634909a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'">
+                            <div class="project-overlay">
+                                <div class="project-tags">
+                                    <span class="tag">Java</span>
+                                    <span class="tag">Sockets</span>
+                                    <span class="tag">Multi-threading</span>
+                                    <span class="tag">Swing</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title" data-i18n="projects.project2.title">Serveur de Messagerie Sécurisé</h3>
+                            <p class="project-description" data-i18n="projects.project2.description">
+                                Application Client-Serveur multi-threadée avec annuaire dynamique et chat instantané sécurisé.
+                            </p>
+                            <div class="project-features">
+                                <span class="feature" data-i18n="projects.features.multithread">Multi-threading</span>
+                                <span class="feature" data-i18n="projects.features.secure">Communication sécurisée</span>
+                                <span class="feature" data-i18n="projects.features.directory">Annuaire dynamique</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" data-i18n="projects.viewDetails">Voir détails</a>
+                                <a href="https://github.com/Abderrahmane-Aroussi" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projet 3 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/Outil_de_Simulation_IP_Fragmentation_Calculator.png" alt="Outil de Simulation IP Fragmentation" onerror="this.src='https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'">
+                            <div class="project-overlay">
+                                <div class="project-tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">Tkinter</span>
+                                    <span class="tag">Algorithmique</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title" data-i18n="projects.project3.title">IP Fragmentation Calculator</h3>
+                            <p class="project-description" data-i18n="projects.project3.description">
+                                Logiciel éducatif pour calculer et visualiser la fragmentation des paquets IP selon le MTU avec export de rapports.
+                            </p>
+                            <div class="project-features">
+                                <span class="feature" data-i18n="projects.features.educational">Outils éducatif</span>
+                                <span class="feature" data-i18n="projects.features.visualization">Visualisation</span>
+                                <span class="feature" data-i18n="projects.features.reports">Rapports exportables</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" data-i18n="projects.viewDetails">Voir détails</a>
+                                <a href="https://github.com/Abderrahmane-Aroussi" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projet 4 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/Analyse_de_Sécurité_SSH_vs_Telnet_&_SDR.png" alt="Analyse de Sécurité SSH vs Telnet" onerror="this.src='https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'">
+                            <div class="project-overlay">
+                                <div class="project-tags">
+                                    <span class="tag">OpenSSH</span>
+                                    <span class="tag">Wireshark</span>
+                                    <span class="tag">SDR</span>
+                                    <span class="tag">Sécurité</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title" data-i18n="projects.project4.title">SSH vs Telnet & SDR Security</h3>
+                            <p class="project-description" data-i18n="projects.project4.description">
+                                Analyse comparative de sécurité entre SSH et Telnet, exploration de la sécurité radio via Software Defined Radio.
+                            </p>
+                            <div class="project-features">
+                                <span class="feature" data-i18n="projects.features.comparative">Analyse comparative</span>
+                                <span class="feature" data-i18n="projects.features.encryption">Chiffrement RSA</span>
+                                <span class="feature" data-i18n="projects.features.sdr">SDR Security</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" data-i18n="projects.viewDetails">Voir détails</a>
+                                <a href="https://github.com/Abderrahmane-Aroussi" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projet 5 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/Plateforme_Web_Phone_Shop_&_Repair_Hub.png" alt="Plateforme Web Phone Shop" onerror="this.src='https://images.unsplash.com/photo-1556656793-08538906a9f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'">
+                            <div class="project-overlay">
+                                <div class="project-tags">
+                                    <span class="tag">JavaScript</span>
+                                    <span class="tag">HTML/CSS</span>
+                                    <span class="tag">JSON</span>
+                                    <span class="tag">Responsive</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title" data-i18n="projects.project5.title">Phone Shop & Repair Hub</h3>
+                            <p class="project-description" data-i18n="projects.project5.description">
+                                Plateforme web modulaire pour vente de smartphones et gestion des rendez-vous de réparation avec interface responsive.
+                            </p>
+                            <div class="project-features">
+                                <span class="feature" data-i18n="projects.features.modular">Architecture modulaire</span>
+                                <span class="feature" data-i18n="projects.features.booking">Système de rendez-vous</span>
+                                <span class="feature" data-i18n="projects.features.responsive">Design responsive</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" data-i18n="projects.viewDetails">Voir détails</a>
+                                <a href="https://github.com/Abderrahmane-Aroussi" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم الخبرات -->
+        <section id="experience" class="experience section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="experience.title">Expérience Professionnelle</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="experience-timeline">
+                    <!-- Expérience 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">Juin 2025 – Août 2025</div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title" data-i18n="experience.job1.title">Stagiaire IT & Développeur</h3>
+                            <p class="timeline-company">Cour d'Appel de Guelmim (Ministère de la Justice)</p>
+                            <div class="timeline-description">
+                                <p data-i18n="experience.job1.description">
+                                    Conception et déploiement de l'application "Judicial Data Manager" pour automatiser la gestion des dettes et procédures.
+                                </p>
+                                <ul>
+                                    <li data-i18n="experience.job1.task1">Développement d'application desktop (Python/SQLite)</li>
+                                    <li data-i18n="experience.job1.task2">Maintenance préventive du parc informatique</li>
+                                    <li data-i18n="experience.job1.task3">Configuration d'imprimantes réseau</li>
+                                    <li data-i18n="experience.job1.task4">Support technique aux fonctionnaires</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">SQLite</span>
+                                <span class="tag">Support IT</span>
+                                <span class="tag">Réseau</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Expérience 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">Juin 2025</div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title" data-i18n="experience.job2.title">Agent d'Inventaire</h3>
+                            <p class="timeline-company">Marjane Holding, Guelmim</p>
+                            <div class="timeline-description">
+                                <p data-i18n="experience.job2.description">
+                                    Participation à l'inventaire général annuel avec développement des compétences en organisation et travail d'équipe.
+                                </p>
+                                <ul>
+                                    <li data-i18n="experience.job2.task1">Gestion de stock sous pression</li>
+                                    <li data-i18n="experience.job2.task2">Travail d'équipe efficace</li>
+                                    <li data-i18n="experience.job2.task3">Organisation rigoureuse</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-tags">
+                                <span class="tag">Gestion de stock</span>
+                                <span class="tag">Travail d'équipe</span>
+                                <span class="tag">Organisation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div class="certifications-section">
+                    <h3 class="certifications-title" data-i18n="experience.certifications">Certifications & Formations</h3>
+                    <div class="certifications-grid">
+                        <div class="certification-card">
+                            <div class="certification-icon">
+                                <i class="fas fa-globe-europe"></i>
+                            </div>
+                            <div class="certification-content">
+                                <h4 data-i18n="experience.cert1.title">Mobilité Internationale & Campus France</h4>
+                                <p class="certification-date" data-i18n="experience.cert1.date">Novembre 2025</p>
+                                <p data-i18n="experience.cert1.org">Club EPIK Leaders & Institut Français d'Agadir</p>
+                            </div>
+                        </div>
+                        <div class="certification-card">
+                            <div class="certification-icon">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <div class="certification-content">
+                                <h4 data-i18n="experience.cert2.title">Programmation Arduino</h4>
+                                <p class="certification-date" data-i18n="experience.cert2.date">Décembre 2024</p>
+                                <p data-i18n="experience.cert2.org">Club Green Future</p>
+                            </div>
+                        </div>
+                        <div class="certification-card">
+                            <div class="certification-icon">
+                                <i class="fas fa-comment-dots"></i>
+                            </div>
+                            <div class="certification-content">
+                                <h4 data-i18n="experience.cert3.title">Écrits Professionnels & Soft Skills</h4>
+                                <p class="certification-date" data-i18n="experience.cert3.date">Mai 2024</p>
+                                <p data-i18n="experience.cert3.org">Association Marocaine des Enseignants de Français</p>
+                            </div>
+                        </div>
+                        <div class="certification-card">
+                            <div class="certification-icon">
+                                <i class="fas fa-flag-checkered"></i>
+                            </div>
+                            <div class="certification-content">
+                                <h4 data-i18n="experience.cert4.title">Compétiteur CTF - Challenge "XMIRAGE"</h4>
+                                <p class="certification-date" data-i18n="experience.cert4.date">Février 2025</p>
+                                <p data-i18n="experience.cert4.org">Club CyberDune</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم الاتصال -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="contact.title">Contactez-moi</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle" data-i18n="contact.subtitle">Disponible pour des opportunités en cybersécurité et administration réseau</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3 data-i18n="contact.email">Email</h3>
+                                <p>abderrahmanearoussi166@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3 data-i18n="contact.phone">Téléphone</h3>
+                                <p>+212 613735878</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3 data-i18n="contact.location">Localisation</h3>
+                                <p>Guelmim, Maroc</p>
+                            </div>
+                        </div>
+                        <div class="contact-social">
+                            <h3 data-i18n="contact.follow">Suivez-moi</h3>
+                            <div class="social-links">
+                                <a href="https://github.com/Abderrahmane-Aroussi" class="social-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="https://www.linkedin.com/in/abderrahmane-aroussi" class="social-link" target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                    <span>LinkedIn</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder=" " required>
+                            <label for="name" data-i18n="contact.form.name">Votre nom</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder=" " required>
+                            <label for="email" data-i18n="contact.form.email">Votre email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder=" " required>
+                            <label for="subject" data-i18n="contact.form.subject">Sujet</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder=" " required></textarea>
+                            <label for="message" data-i18n="contact.form.message">Votre message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-i18n="contact.form.submit">
+                            <i class="fas fa-paper-plane"></i> Envoyer le message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- التذييل -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-icon">AA</div>
+                    <span class="logo-text">A.AROUSSI</span>
+                </div>
+                <p class="footer-description" data-i18n="footer.description">
+                    Technicien Supérieur en Réseaux Informatiques et Sécurité, passionné par l'innovation et la sécurité informatique.
+                </p>
+                <div class="footer-social">
+                    <a href="https://github.com/Abderrahmane-Aroussi" class="footer-social-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/abderrahmane-aroussi" class="footer-social-link" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:abderrahmanearoussi166@gmail.com" class="footer-social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <div class="footer-copyright">
+                    <p data-i18n="footer.copyright">© 2024 Abderrahmane Aroussi. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- الزر للعودة إلى الأعلى -->
+    <a href="#home" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- نموذج نجاح الإرسال -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3 data-i18n="modal.success">Message envoyé avec succès!</h3>
+            <p data-i18n="modal.thanks">Merci pour votre message. Je vous répondrai dans les plus brefs délais.</p>
+            <button class="btn btn-primary" id="closeModal" data-i18n="modal.close">Fermer</button>
+        </div>
+    </div>
+
+    <script src="assets/js/translations.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
