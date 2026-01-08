@@ -2,8 +2,9 @@
 
 Un portfolio professionnel moderne et responsive pour présenter mes compétences, projets et expériences en cybersécurité et réseaux informatiques.
 
-## 🌐 Démo en direct
-[Lien vers la démo] - À ajouter après déploiement
+## 🌐 lien en direct
+https://abderrahmane-aroussi.github.io/
+
 
 ## ✨ Fonctionnalités
 
@@ -50,3 +51,4 @@ Abderrahmane_Aroussi_Portfolio/
 │       └── Plateforme_Web_Phone_Shop_&_Repair_Hub.png   
 │
 └── README.md
+
