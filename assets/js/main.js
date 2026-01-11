@@ -1,5 +1,4 @@
 // ===== DOM ELEMENTS =====
-const themeToggle = document.getElementById('themeToggle');
 const langToggle = document.getElementById('langToggle');
 const mobileLangToggle = document.getElementById('mobileLangToggle');
 const menuToggle = document.getElementById('menuToggle');
@@ -7,30 +6,127 @@ const mobileMenuClose = document.getElementById('mobileMenuClose');
 const mobileMenu = document.querySelector('.mobile-menu');
 const backToTop = document.getElementById('backToTop');
 const contactForm = document.querySelector('.contact-form');
-const successModal = document.getElementById('successModal');
-const closeModal = document.getElementById('closeModal');
 const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
-const formInputs = document.querySelectorAll('.form-group input, .form-group textarea');
 
-// ===== THEME TOGGLE =====
-function initTheme() {
-    const savedTheme = localStorage.getItem('theme') || 'light';
-    document.documentElement.setAttribute('data-theme', savedTheme);
-    updateThemeIcon(savedTheme);
-}
+// ===== SKILLS DATA =====
+const skillsData = {
+    networkSecurity: {
+        title: "Network & Security",
+        icon: "fas fa-shield-alt",
+        skills: [
+            { name: "Packet Tracer", icon: "fas fa-network-wired" },
+            { name: "Wireshark", icon: "fas fa-eye" },
+            { name: "Snort", icon: "fas fa-shield-alt" },
+            { name: "TCP/IP", icon: "fas fa-sitemap" },
+            { name: "VLAN", icon: "fas fa-project-diagram" },
+            { name: "VPN", icon: "fas fa-lock" },
+            { name: "Firewall", icon: "fas fa-fire" },
+            { name: "Cryptography", icon: "fas fa-key" }
+        ]
+    },
+    development: {
+        title: "Development",
+        icon: "fas fa-code",
+        skills: [
+            { name: "Python", icon: "fab fa-python" },
+            { name: "Java", icon: "fab fa-java" },
+            { name: "HTML/CSS", icon: "fab fa-html5" },
+            { name: "JavaScript", icon: "fab fa-js" },
+            { name: "SQL", icon: "fas fa-database" },
+            { name: "Flask", icon: "fas fa-flask" },
+            { name: "C Language", icon: "fas fa-c" },
+            { name: "API REST", icon: "fas fa-exchange-alt" }
+        ]
+    },
+    toolsSystems: {
+        title: "Tools & Systems",
+        icon: "fas fa-tools",
+        skills: [
+            { name: "Linux", icon: "fab fa-linux" },
+            { name: "Windows Server", icon: "fab fa-windows" },
+            { name: "Docker", icon: "fab fa-docker" },
+            { name: "VirtualBox", icon: "fas fa-cube" },
+            { name: "GitHub", icon: "fab fa-github" },
+            { name: "MySQL", icon: "fas fa-database" },
+            { name: "SQLite", icon: "fas fa-database" },
+            { name: "MongoDB", icon: "fab fa-envira" },
+            { name: "Arduino", icon: "fas fa-microchip" }
+        ]
+    },
+    softSkills: {
+        title: "Soft Skills",
+        icon: "fas fa-users",
+        skills: [
+            { name: "Communication", icon: "fas fa-comments" },
+            { name: "Teamwork", icon: "fas fa-handshake" },
+            { name: "Problem Solving", icon: "fas fa-lightbulb" },
+            { name: "Organization", icon: "fas fa-tasks" },
+            { name: "Adaptability", icon: "fas fa-random" },
+            { name: "Leadership", icon: "fas fa-flag" },
+            { name: "Time Management", icon: "fas fa-clock" }
+        ]
+    }
+};
 
-function toggleTheme() {
-    const currentTheme = document.documentElement.getAttribute('data-theme');
-    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+// ===== SKILLS SECTION RENDER =====
+function renderSkillsGrid() {
+    // Network & Security
+    const networkGrid = document.getElementById('network-skills-grid');
+    if (networkGrid) {
+        skillsData.networkSecurity.skills.forEach(skill => {
+            const skillBox = createSkillBox(skill);
+            networkGrid.appendChild(skillBox);
+        });
+    }
     
-    document.documentElement.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
-    updateThemeIcon(newTheme);
+    // Development
+    const developmentGrid = document.getElementById('development-skills-grid');
+    if (developmentGrid) {
+        skillsData.development.skills.forEach(skill => {
+            const skillBox = createSkillBox(skill);
+            developmentGrid.appendChild(skillBox);
+        });
+    }
+    
+    // Tools & Systems
+    const toolsGrid = document.getElementById('tools-skills-grid');
+    if (toolsGrid) {
+        skillsData.toolsSystems.skills.forEach(skill => {
+            const skillBox = createSkillBox(skill);
+            toolsGrid.appendChild(skillBox);
+        });
+    }
+    
+    // Soft Skills
+    const softSkillsGrid = document.getElementById('soft-skills-grid');
+    if (softSkillsGrid) {
+        skillsData.softSkills.skills.forEach(skill => {
+            const skillBox = createSkillBox(skill);
+            softSkillsGrid.appendChild(skillBox);
+        });
+    }
 }
 
-function updateThemeIcon(theme) {
-    const icon = themeToggle.querySelector('i');
-    icon.className = theme === 'light' ? 'fas fa-moon' : 'fas fa-sun';
+function createSkillBox(skill) {
+    const skillBox = document.createElement('div');
+    skillBox.className = 'skill-box';
+    skillBox.innerHTML = `
+        <div class="skill-icon">
+            <i class="${skill.icon}"></i>
+        </div>
+        <span class="skill-name">${skill.name}</span>
+    `;
+    
+    // Add hover effect
+    skillBox.addEventListener('mouseenter', () => {
+        skillBox.style.transform = 'translateY(-4px)';
+    });
+    
+    skillBox.addEventListener('mouseleave', () => {
+        skillBox.style.transform = 'translateY(0)';
+    });
+    
+    return skillBox;
 }
 
 // ===== LANGUAGE TOGGLE =====
@@ -89,6 +185,27 @@ function closeMobileMenu() {
     document.body.style.overflow = '';
 }
 
+// ===== SCROLL REVEAL ANIMATIONS =====
+function initScrollReveal() {
+    const revealElements = document.querySelectorAll('.reveal');
+    
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    });
+    
+    revealElements.forEach(element => {
+        revealObserver.observe(element);
+    });
+}
+
 // ===== SMOOTH SCROLL =====
 function initSmoothScroll() {
     navLinks.forEach(link => {
@@ -122,6 +239,19 @@ function initSmoothScroll() {
     });
 }
 
+// ===== NAVBAR SCROLL EFFECT =====
+function initNavbarScroll() {
+    const navbar = document.querySelector('.navbar');
+    
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+}
+
 // ===== BACK TO TOP =====
 function initBackToTop() {
     window.addEventListener('scroll', () => {
@@ -143,6 +273,11 @@ function initBackToTop() {
 
 // ===== FORM HANDLING =====
 function initForm() {
+    // No longer need to handle form submission locally
+    // Form will submit to Formspree directly
+    
+    const formInputs = document.querySelectorAll('.form-group input, .form-group textarea');
+    
     // Floating labels
     formInputs.forEach(input => {
         input.addEventListener('input', () => {
@@ -158,96 +293,48 @@ function initForm() {
             input.setAttribute('data-filled', 'true');
         }
     });
+}
+
+// ===== PROJECT CARD HOVER EFFECTS =====
+function initProjectHover() {
+    const projectCards = document.querySelectorAll('.project-card');
     
-    // Form submission
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            // In a real application, you would send the form data to a server here
-            // For demo purposes, we'll just show the success modal
-            
-            // Simulate API call
-            setTimeout(() => {
-                contactForm.reset();
-                formInputs.forEach(input => input.removeAttribute('data-filled'));
-                successModal.classList.add('active');
-                document.body.style.overflow = 'hidden';
-            }, 1000);
+    projectCards.forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            const overlay = card.querySelector('.project-overlay');
+            if (overlay) {
+                overlay.style.opacity = '1';
+            }
         });
-    }
-    
-    // Modal close
-    if (closeModal) {
-        closeModal.addEventListener('click', () => {
-            successModal.classList.remove('active');
-            document.body.style.overflow = '';
+        
+        card.addEventListener('mouseleave', () => {
+            const overlay = card.querySelector('.project-overlay');
+            if (overlay) {
+                overlay.style.opacity = '0';
+            }
         });
-    }
-    
-    // Close modal when clicking outside
-    successModal.addEventListener('click', (e) => {
-        if (e.target === successModal) {
-            successModal.classList.remove('active');
-            document.body.style.overflow = '';
-        }
     });
 }
 
-// ===== ANIMATIONS =====
-function initAnimations() {
-    // Intersection Observer for fade-in animations
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
+// ===== SKILL BOX HOVER =====
+function initSkillBoxes() {
+    const skillBoxes = document.querySelectorAll('.skill-box');
     
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animated');
-            }
+    skillBoxes.forEach(box => {
+        box.addEventListener('mouseenter', () => {
+            box.style.transform = 'translateY(-4px)';
         });
-    }, observerOptions);
-    
-    // Observe sections for animations
-    document.querySelectorAll('section').forEach(section => {
-        observer.observe(section);
-    });
-}
-
-// ===== SKILL BARS ANIMATION =====
-function initSkillBars() {
-    const skillBars = document.querySelectorAll('.skill-level');
-    
-    const skillObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const skillLevel = entry.target;
-                const width = skillLevel.style.width;
-                skillLevel.style.width = '0';
-                
-                setTimeout(() => {
-                    skillLevel.style.width = width;
-                }, 300);
-                
-                skillObserver.unobserve(skillLevel);
-            }
+        
+        box.addEventListener('mouseleave', () => {
+            box.style.transform = 'translateY(0)';
         });
-    }, {
-        threshold: 0.5
-    });
-    
-    skillBars.forEach(bar => {
-        skillObserver.observe(bar);
     });
 }
 
 // ===== INITIALIZATION =====
 function init() {
-    // Initialize theme
-    initTheme();
-    themeToggle.addEventListener('click', toggleTheme);
+    // Initialize skills grid
+    renderSkillsGrid();
     
     // Initialize language
     initLanguage();
@@ -260,6 +347,12 @@ function init() {
     menuToggle.addEventListener('click', toggleMobileMenu);
     mobileMenuClose.addEventListener('click', closeMobileMenu);
     
+    // Initialize scroll reveal
+    initScrollReveal();
+    
+    // Initialize navbar scroll effect
+    initNavbarScroll();
+    
     // Initialize smooth scroll
     initSmoothScroll();
     
@@ -269,17 +362,22 @@ function init() {
     // Initialize form
     initForm();
     
-    // Initialize animations
-    initAnimations();
+    // Initialize project hover effects
+    initProjectHover();
     
-    // Initialize skill bars
-    initSkillBars();
+    // Initialize skill boxes hover
+    initSkillBoxes();
     
     // Close mobile menu on resize (if desktop)
     window.addEventListener('resize', () => {
         if (window.innerWidth > 768 && mobileMenu.classList.contains('active')) {
             closeMobileMenu();
         }
+    });
+    
+    // Add reveal class to all sections
+    document.querySelectorAll('section').forEach(section => {
+        section.classList.add('reveal');
     });
 }
 
@@ -288,11 +386,6 @@ document.addEventListener('DOMContentLoaded', init);
 
 // Keyboard shortcuts
 document.addEventListener('keydown', (e) => {
-    // Toggle theme with Alt+T
-    if (e.altKey && e.key === 't') {
-        toggleTheme();
-    }
-    
     // Toggle language with Alt+L
     if (e.altKey && e.key === 'l') {
         toggleLanguage();
@@ -303,9 +396,30 @@ document.addEventListener('keydown', (e) => {
         if (mobileMenu.classList.contains('active')) {
             closeMobileMenu();
         }
-        if (successModal.classList.contains('active')) {
-            successModal.classList.remove('active');
-            document.body.style.overflow = '';
-        }
     }
+});
+
+// Handle scroll for animations
+window.addEventListener('scroll', () => {
+    const scrollPosition = window.scrollY;
+    
+    // Parallax effect for hero section
+    const heroSection = document.querySelector('.hero');
+    if (heroSection) {
+        heroSection.style.transform = `translateY(${scrollPosition * 0.1}px)`;
+    }
+});
+
+// Add loading animation
+window.addEventListener('load', () => {
+    document.body.classList.add('loaded');
+    
+    // Trigger initial animations
+    setTimeout(() => {
+        document.querySelectorAll('.reveal').forEach((el, index) => {
+            setTimeout(() => {
+                el.classList.add('active');
+            }, index * 100);
+        });
+    }, 500);
 });
