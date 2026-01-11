@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abderrahmane Aroussi | Portfolio Professionnel</title>
-    <meta name="description" content="Portfolio professionnel de Abderrahmane Aroussi, Technicien Supérieur en Réseaux Informatiques et Sécurité">
+    <title>Abderrahmane Aroussi | IT & Cybersecurity Portfolio</title>
+    <meta name="description" content="Academic portfolio of Abderrahmane Aroussi, IT & Cybersecurity Student">
+    <meta name="keywords" content="cybersecurity, network security, IT student, Python developer, academic portfolio">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Source+Code+Pro:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 </head>
 <body>
-    <!-- شريط التنقل -->
+    <!-- Navigation -->
     <header class="navbar">
         <div class="container">
             <div class="logo">
                 <a href="#home">
-                    <div class="logo-icon">AA</div>
-                    <span class="logo-text">A.AROUSSI</span>
+                    <div class="logo-icon">
+                        <span class="logo-initials">AA</span>
+                    </div>
+                    <span class="logo-text">Abderrahmane<span class="logo-accent">Aroussi</span></span>
                 </a>
             </div>
             <nav class="nav-links">
@@ -39,11 +42,6 @@
                         <span class="lang-text">FR</span>
                     </button>
                 </div>
-                <div class="theme-switcher">
-                    <button id="themeToggle" class="btn-theme" aria-label="Changer de thème">
-                        <i class="fas fa-moon"></i>
-                    </button>
-                </div>
                 <div class="menu-toggle">
                     <button id="menuToggle" class="btn-menu" aria-label="Menu de navigation">
                         <i class="fas fa-bars"></i>
@@ -53,10 +51,10 @@
         </div>
     </header>
 
-    <!-- القائمة الجانبية للموبايل -->
+    <!-- Mobile Menu -->
     <div class="mobile-menu">
         <div class="mobile-menu-header">
-            <span class="mobile-logo">A.AROUSSI</span>
+            <span class="mobile-logo">Portfolio</span>
             <button id="mobileMenuClose" class="btn-close-menu" aria-label="Fermer le menu">
                 <i class="fas fa-times"></i>
             </button>
@@ -89,37 +87,48 @@
         </div>
     </div>
 
-    <!-- المحتوى الرئيسي -->
+    <!-- Main Content -->
     <main>
-        <!-- قسم البطل -->
+        <!-- Hero Section -->
         <section id="home" class="hero">
             <div class="container">
                 <div class="hero-content">
                     <div class="hero-text">
-                        <h5 class="hero-subtitle" data-i18n="hero.greeting">Bonjour, je suis</h5>
-                        <h1 class="hero-title">Abderrahmane <span class="highlight">Aroussi</span></h1>
-                        <h2 class="hero-role" data-i18n="hero.role">Technicien Supérieur en Réseaux & Sécurité</h2>
+                        <h5 class="hero-subtitle" data-i18n="hero.greeting">
+                            Bonjour, je suis
+                        </h5>
+                        <h1 class="hero-title">
+                            Abderrahmane <span class="highlight">Aroussi</span>
+                        </h1>
+                        <h2 class="hero-role" data-i18n="hero.role">
+                            IT & Cybersecurity Student
+                        </h2>
                         <p class="hero-description" data-i18n="hero.description">
                             Passionné par la cybersécurité et l'administration système. Je conçois et implémente des solutions sécurisées pour optimiser les infrastructures IT.
                         </p>
                         <div class="hero-buttons">
-                            <a href="#projects" class="btn btn-primary" data-i18n="hero.viewProjects">Voir mes projets</a>
-                            <a href="#contact" class="btn btn-secondary" data-i18n="hero.contactMe">Me contacter</a>
+                            <a href="#projects" class="btn btn-primary" data-i18n="hero.viewProjects">
+                                <i class="fas fa-code"></i> Voir mes projets
+                            </a>
+                            <a href="#contact" class="btn btn-secondary" data-i18n="hero.contactMe">
+                                <i class="fas fa-envelope"></i> Me contacter
+                            </a>
                         </div>
                     </div>
                     <div class="hero-image">
                         <div class="profile-container">
-                            <img src="assets/images/My_Pictur.png" alt="Abderrahmane Aroussi" class="profile-img" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80'">
-                            <div class="profile-frame"></div>
+                            <div class="profile-frame">
+                                <img src="assets/images/My_Pictur.png" alt="Abderrahmane Aroussi" class="profile-img" onerror="this.src='https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80'">
+                            </div>
                             <div class="profile-badge">
-                                <i class="fas fa-shield-alt"></i>
+                                <i class="fas fa-graduation-cap"></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="hero-stats">
                     <div class="stat">
-                        <span class="stat-number">5+</span>
+                        <span class="stat-number">6+</span>
                         <span class="stat-label" data-i18n="stats.projects">Projets</span>
                     </div>
                     <div class="stat">
@@ -131,23 +140,27 @@
                         <span class="stat-label" data-i18n="stats.languages">Langues</span>
                     </div>
                     <div class="stat">
-                        <span class="stat-number">100%</span>
-                        <span class="stat-label" data-i18n="stats.dedication">Engagement</span>
+                        <span class="stat-icon"><i class="fas fa-graduation-cap"></i></span>
+                        <span class="stat-label" data-i18n="stats.dedication">Étudiant DUT</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- قسم عني -->
+        <!-- About Section -->
         <section id="about" class="about section">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title" data-i18n="about.title">À propos de moi</h2>
+                    <h2 class="section-title" data-i18n="about.title">
+                        À propos de moi
+                    </h2>
                     <div class="section-divider"></div>
                 </div>
                 <div class="about-content">
                     <div class="about-text">
-                        <h3 class="about-subtitle" data-i18n="about.subtitle">Technicien Passionné par la Cybersécurité</h3>
+                        <h3 class="about-subtitle" data-i18n="about.subtitle">
+                            Étudiant Passionné par la Cybersécurité
+                        </h3>
                         <p data-i18n="about.p1">
                             Étudiant en 2ème année DUT à l'École Supérieure de Technologie de Guelmim, je combine une solide base théorique avec une capacité prouvée à développer des solutions logicielles pratiques (Python/Java) pour résoudre des problèmes réels.
                         </p>
@@ -177,7 +190,9 @@
                         </a>
                     </div>
                     <div class="about-education">
-                        <h3 class="education-title" data-i18n="about.education">Formation</h3>
+                        <h3 class="education-title" data-i18n="about.education">
+                            Formation
+                        </h3>
                         <div class="education-timeline">
                             <div class="timeline-item">
                                 <div class="timeline-date">2024 – présent</div>
@@ -198,150 +213,73 @@
             </div>
         </section>
 
-        <!-- قسم المهارات -->
+        <!-- Skills Section -->
         <section id="skills" class="skills section">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title" data-i18n="skills.title">Compétences Techniques</h2>
+                    <h2 class="section-title" data-i18n="skills.title">
+                        Compétences Techniques
+                    </h2>
                     <div class="section-divider"></div>
-                    <p class="section-subtitle" data-i18n="skills.subtitle">Un éventail de compétences en réseaux, sécurité et développement</p>
+                    <p class="section-subtitle" data-i18n="skills.subtitle">Compétences organisées par catégories</p>
                 </div>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <div class="skill-category-header">
-                            <i class="fas fa-network-wired"></i>
-                            <h3 data-i18n="skills.network">Réseaux</h3>
-                        </div>
-                        <div class="skill-items">
-                            <div class="skill-item">
-                                <span class="skill-name">TCP/IP</span>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 90%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">Cisco Packet Tracer</span>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 85%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">VLAN & Routing</span>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 88%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">Wireshark</span>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 82%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <div class="skill-category-header">
+                
+                <!-- Network & Security -->
+                <div class="skill-category-section reveal">
+                    <div class="skill-category-header">
+                        <h3 class="skill-category-title">
                             <i class="fas fa-shield-alt"></i>
-                            <h3 data-i18n="skills.security">Sécurité</h3>
-                        </div>
-                        <div class="skill-items">
-                            <div class="skill-item">
-                                <span class="skill-name">Ethical Hacking</span>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 85%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">Firewall Configuration</span>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 80%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">Cryptographie</span>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 78%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">VPN</span>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 75%"></div>
-                                </div>
-                            </div>
-                        </div>
+                            <span data-i18n="skills.networkSecurity">Réseaux & Sécurité</span>
+                        </h3>
                     </div>
-
-                    <div class="skill-category">
-                        <div class="skill-category-header">
-                            <i class="fas fa-code"></i>
-                            <h3 data-i18n="skills.development">Développement</h3>
-                        </div>
-                        <div class="skill-items">
-                            <div class="skill-item">
-                                <span class="skill-name">Python</span>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 92%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">Java</span>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 85%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">HTML/CSS</span>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 90%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">SQL</span>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 88%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <div class="skill-category-header">
-                            <i class="fas fa-server"></i>
-                            <h3 data-i18n="skills.admin">Administration</h3>
-                        </div>
-                        <div class="skill-items">
-                            <div class="skill-item">
-                                <span class="skill-name">Linux</span>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 90%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">Windows Server</span>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 80%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">VirtualBox</span>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 85%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">Git/GitHub</span>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 88%"></div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="skills-grid" id="network-skills-grid">
+                        <!-- Will be populated by JavaScript -->
                     </div>
                 </div>
 
-                <div class="languages-section">
-                    <h3 class="languages-title" data-i18n="skills.languages">Langues</h3>
+                <!-- Development -->
+                <div class="skill-category-section reveal">
+                    <div class="skill-category-header">
+                        <h3 class="skill-category-title">
+                            <i class="fas fa-code"></i>
+                            <span data-i18n="skills.development">Développement</span>
+                        </h3>
+                    </div>
+                    <div class="skills-grid" id="development-skills-grid">
+                        <!-- Will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Tools & Systems -->
+                <div class="skill-category-section reveal">
+                    <div class="skill-category-header">
+                        <h3 class="skill-category-title">
+                            <i class="fas fa-tools"></i>
+                            <span data-i18n="skills.toolsSystems">Outils & Systèmes</span>
+                        </h3>
+                    </div>
+                    <div class="skills-grid" id="tools-skills-grid">
+                        <!-- Will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skill-category-section reveal">
+                    <div class="skill-category-header">
+                        <h3 class="skill-category-title">
+                            <i class="fas fa-users"></i>
+                            <span data-i18n="skills.softSkills">Soft Skills</span>
+                        </h3>
+                    </div>
+                    <div class="skills-grid" id="soft-skills-grid">
+                        <!-- Will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <div class="languages-section reveal">
+                    <h3 class="languages-title" data-i18n="skills.languages">
+                        Langues
+                    </h3>
                     <div class="languages-grid">
                         <div class="language-item">
                             <span class="language-name" data-i18n="languages.arabic">Arabe</span>
@@ -349,31 +287,33 @@
                         </div>
                         <div class="language-item">
                             <span class="language-name" data-i18n="languages.french">Français</span>
-                            <span class="language-level" data-i18n="languages.fluent">Courant (Professionnel)</span>
+                            <span class="language-level" data-i18n="languages.fluent">Professionnel</span>
                         </div>
                         <div class="language-item">
                             <span class="language-name" data-i18n="languages.english">Anglais</span>
-                            <span class="language-level" data-i18n="languages.technical">Fluent</span>
+                            <span class="language-level" data-i18n="languages.technical">Courant</span>
                         </div>
                         <div class="language-item">
                             <span class="language-name" data-i18n="languages.tamazight">Tamazight</span>
-                            <span class="language-level" data-i18n="languages.native">Fluent</span>
+                            <span class="language-level" data-i18n="languages.native">Courant</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- قسم المشاريع -->
+        <!-- Projects Section -->
         <section id="projects" class="projects section">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title" data-i18n="projects.title">Mes Projets</h2>
+                    <h2 class="section-title" data-i18n="projects.title">
+                        Mes Projets
+                    </h2>
                     <div class="section-divider"></div>
                     <p class="section-subtitle" data-i18n="projects.subtitle">Une sélection de projets réalisés en cybersécurité et développement</p>
                 </div>
                 <div class="projects-grid">
-                    <!-- Projet 1 -->
+                    <!-- Project 1 -->
                     <div class="project-card">
                         <div class="project-image">
                             <img src="assets/images/Système_de_Détection_d'Intrusion_N-IDS.png" alt="Système de Détection d'Intrusion N-IDS" onerror="this.src='https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'">
@@ -405,7 +345,7 @@
                         </div>
                     </div>
 
-                    <!-- Projet 2 -->
+                    <!-- Project 2 -->
                     <div class="project-card">
                         <div class="project-image">
                             <img src="assets/images/Serveur_de_Messagerie_Sécurisé_Chat_&_Directory.png" alt="Serveur de Messagerie Sécurisé" onerror="this.src='https://images.unsplash.com/photo-1587560699334-cc4ff634909a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'">
@@ -437,7 +377,7 @@
                         </div>
                     </div>
 
-                    <!-- Projet 3 -->
+                    <!-- Project 3 -->
                     <div class="project-card">
                         <div class="project-image">
                             <img src="assets/images/Outil_de_Simulation_IP_Fragmentation_Calculator.png" alt="Outil de Simulation IP Fragmentation" onerror="this.src='https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'">
@@ -468,7 +408,7 @@
                         </div>
                     </div>
 
-                    <!-- Projet 4 -->
+                    <!-- Project 4 -->
                     <div class="project-card">
                         <div class="project-image">
                             <img src="assets/images/Analyse_de_Sécurité_SSH_vs_Telnet_&_SDR.png" alt="Analyse de Sécurité SSH vs Telnet" onerror="this.src='https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'">
@@ -500,7 +440,7 @@
                         </div>
                     </div>
 
-                    <!-- Projet 5 -->
+                    <!-- Project 5 -->
                     <div class="project-card">
                         <div class="project-image">
                             <img src="assets/images/Plateforme_Web_Phone_Shop_&_Repair_Hub.png" alt="Plateforme Web Phone Shop" onerror="this.src='https://images.unsplash.com/photo-1556656793-08538906a9f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'">
@@ -531,20 +471,56 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Project 6 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-icon">
+                                <i class="fas fa-balance-scale"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-tags">
+                                    <span class="tag" data-i18n="projects.project6.tags.python">Python</span>
+                                    <span class="tag" data-i18n="projects.project6.tags.sqlite">SQLite</span>
+                                    <span class="tag" data-i18n="projects.project6.tags.desktop">Desktop App</span>
+                                    <span class="tag" data-i18n="projects.project6.tags.automation">Automation</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title" data-i18n="projects.project6.title">Judicial Data Manager</h3>
+                            <p class="project-description" data-i18n="projects.project6.description">
+                                Application desktop conçue pour calculer les dettes des avocats et générer automatiquement des documents juridiques.
+                            </p>
+                            <div class="project-features">
+                                <span class="feature" data-i18n="projects.features.automation">Automatisation 100%</span>
+                                <span class="feature" data-i18n="projects.features.timeReduction">-60% temps traitement</span>
+                                <span class="feature" data-i18n="projects.project6.context">Court d'Appel</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" data-i18n="projects.viewDetails">Voir détails</a>
+                                <a href="https://github.com/Abderrahmane-Aroussi" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- قسم الخبرات -->
+        <!-- Experience Section -->
         <section id="experience" class="experience section">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title" data-i18n="experience.title">Expérience Professionnelle</h2>
+                    <h2 class="section-title" data-i18n="experience.title">
+                        Expérience Professionnelle
+                    </h2>
                     <div class="section-divider"></div>
                 </div>
                 
                 <div class="experience-timeline">
-                    <!-- Expérience 1 -->
+                    <!-- Experience 1 -->
                     <div class="timeline-item">
                         <div class="timeline-date">Juin 2025 – Août 2025</div>
                         <div class="timeline-content">
@@ -570,7 +546,7 @@
                         </div>
                     </div>
 
-                    <!-- Expérience 2 -->
+                    <!-- Experience 2 -->
                     <div class="timeline-item">
                         <div class="timeline-date">Juin 2025</div>
                         <div class="timeline-content">
@@ -597,7 +573,9 @@
 
                 <!-- Certifications -->
                 <div class="certifications-section">
-                    <h3 class="certifications-title" data-i18n="experience.certifications">Certifications & Formations</h3>
+                    <h3 class="certifications-title" data-i18n="experience.certifications">
+                        Certifications & Formations
+                    </h3>
                     <div class="certifications-grid">
                         <div class="certification-card">
                             <div class="certification-icon">
@@ -644,11 +622,13 @@
             </div>
         </section>
 
-        <!-- قسم الاتصال -->
+        <!-- Contact Section -->
         <section id="contact" class="contact section">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title" data-i18n="contact.title">Contactez-moi</h2>
+                    <h2 class="section-title" data-i18n="contact.title">
+                        Contactez-moi
+                    </h2>
                     <div class="section-divider"></div>
                     <p class="section-subtitle" data-i18n="contact.subtitle">Disponible pour des opportunités en cybersécurité et administration réseau</p>
                 </div>
@@ -695,22 +675,26 @@
                             </div>
                         </div>
                     </div>
-                    <form class="contact-form">
+                    <form action="https://formspree.io/f/xaqqwvgy" method="POST" class="contact-form">
                         <div class="form-group">
-                            <input type="text" id="name" placeholder=" " required>
+                            <input type="text" id="name" name="name" placeholder=" " required>
                             <label for="name" data-i18n="contact.form.name">Votre nom</label>
+                            <div class="form-line"></div>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" placeholder=" " required>
+                            <input type="email" id="email" name="email" placeholder=" " required>
                             <label for="email" data-i18n="contact.form.email">Votre email</label>
+                            <div class="form-line"></div>
                         </div>
                         <div class="form-group">
-                            <input type="text" id="subject" placeholder=" " required>
+                            <input type="text" id="subject" name="subject" placeholder=" " required>
                             <label for="subject" data-i18n="contact.form.subject">Sujet</label>
+                            <div class="form-line"></div>
                         </div>
                         <div class="form-group">
-                            <textarea id="message" rows="5" placeholder=" " required></textarea>
+                            <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
                             <label for="message" data-i18n="contact.form.message">Votre message</label>
+                            <div class="form-line"></div>
                         </div>
                         <button type="submit" class="btn btn-primary" data-i18n="contact.form.submit">
                             <i class="fas fa-paper-plane"></i> Envoyer le message
@@ -721,16 +705,18 @@
         </section>
     </main>
 
-    <!-- التذييل -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <div class="logo-icon">AA</div>
-                    <span class="logo-text">A.AROUSSI</span>
+                    <div class="logo-icon">
+                        <span class="logo-initials">AA</span>
+                    </div>
+                    <span class="logo-text">Abderrahmane<span class="logo-accent">Aroussi</span></span>
                 </div>
                 <p class="footer-description" data-i18n="footer.description">
-                    Technicien Supérieur en Réseaux Informatiques et Sécurité, passionné par l'innovation et la sécurité informatique.
+                    Étudiant en Réseaux Informatiques et Sécurité, passionné par l'innovation et la sécurité informatique.
                 </p>
                 <div class="footer-social">
                     <a href="https://github.com/Abderrahmane-Aroussi" class="footer-social-link" target="_blank">
@@ -750,25 +736,12 @@
         </div>
     </footer>
 
-    <!-- الزر للعودة إلى الأعلى -->
+    <!-- Back to Top -->
     <a href="#home" class="back-to-top" id="backToTop">
         <i class="fas fa-arrow-up"></i>
     </a>
 
-    <!-- نموذج نجاح الإرسال -->
-    <div class="modal" id="successModal">
-        <div class="modal-content">
-            <div class="modal-icon">
-                <i class="fas fa-check-circle"></i>
-            </div>
-            <h3 data-i18n="modal.success">Message envoyé avec succès!</h3>
-            <p data-i18n="modal.thanks">Merci pour votre message. Je vous répondrai dans les plus brefs délais.</p>
-            <button class="btn btn-primary" id="closeModal" data-i18n="modal.close">Fermer</button>
-        </div>
-    </div>
-
     <script src="assets/js/translations.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
-
 </html>
