@@ -273,9 +273,6 @@ function initBackToTop() {
 
 // ===== FORM HANDLING =====
 function initForm() {
-    // No longer need to handle form submission locally
-    // Form will submit to Formspree directly
-    
     const formInputs = document.querySelectorAll('.form-group input, .form-group textarea');
     
     // Floating labels
@@ -347,8 +344,10 @@ function init() {
     menuToggle.addEventListener('click', toggleMobileMenu);
     mobileMenuClose.addEventListener('click', closeMobileMenu);
     
-    // Initialize scroll reveal
-    initScrollReveal();
+    // Initialize scroll reveal (reduced timeout)
+    setTimeout(() => {
+        initScrollReveal();
+    }, 50); // Reduced from 500ms to 50ms
     
     // Initialize navbar scroll effect
     initNavbarScroll();
@@ -382,6 +381,7 @@ function init() {
 }
 
 // ===== EVENT LISTENERS =====
+// CRITICAL CHANGE: Use DOMContentLoaded instead of load event
 document.addEventListener('DOMContentLoaded', init);
 
 // Keyboard shortcuts
@@ -410,16 +410,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Add loading animation
+// Add loading animation when page fully loads
 window.addEventListener('load', () => {
     document.body.classList.add('loaded');
-    
-    // Trigger initial animations
-    setTimeout(() => {
-        document.querySelectorAll('.reveal').forEach((el, index) => {
-            setTimeout(() => {
-                el.classList.add('active');
-            }, index * 100);
-        });
-    }, 500);
 });
