@@ -1,11 +1,11 @@
 const translations = {
-    // Navigation
+    // ===== NAVIGATION =====
     "nav.home": {
         "fr": "Accueil",
         "en": "Home"
     },
     "nav.about": {
-        "fr": "Apropos",
+        "fr": "À propos",
         "en": "About"
     },
     "nav.skills": {
@@ -24,25 +24,19 @@ const translations = {
         "fr": "Contact",
         "en": "Contact"
     },
-    
-    // Language
-    "lang.fr": {
-        "fr": "FR",
-        "en": "FR"
-    },
-    
-    // Hero Section
+
+    // ===== HERO SECTION =====
     "hero.greeting": {
         "fr": "Bonjour, je suis",
         "en": "Hello, I'm"
     },
     "hero.role": {
-        "fr": "Technicien Supérieur en Réseaux & Sécurité",
-        "en": "Senior Technician in Networks & Security"
+        "fr": "Étudiant en IT & Cybersécurité",
+        "en": "IT & Cybersecurity Student"
     },
     "hero.description": {
         "fr": "Passionné par la cybersécurité et l'administration système. Je conçois et implémente des solutions sécurisées pour optimiser les infrastructures IT.",
-        "en": "Passionate about cybersecurity and system administration. I design and implement secure solutions to optimize IT infrastructures."
+        "en": "Passionate about cybersecurity and system administration. I design and implement secure solutions to optimize IT infrastructure."
     },
     "hero.viewProjects": {
         "fr": "Voir mes projets",
@@ -52,8 +46,8 @@ const translations = {
         "fr": "Me contacter",
         "en": "Contact me"
     },
-    
-    // Stats
+
+    // ===== STATS =====
     "stats.projects": {
         "fr": "Projets",
         "en": "Projects"
@@ -67,26 +61,26 @@ const translations = {
         "en": "Languages"
     },
     "stats.dedication": {
-        "fr": "Engagement",
-        "en": "Dedication"
+        "fr": "Étudiant DUT",
+        "en": "DUT Student"
     },
-    
-    // About Section
+
+    // ===== ABOUT SECTION =====
     "about.title": {
         "fr": "À propos de moi",
         "en": "About me"
     },
     "about.subtitle": {
-        "fr": "Technicien Passionné par la Cybersécurité",
-        "en": "Cybersecurity Passionate Technician"
+        "fr": "Étudiant Passionné par la Cybersécurité",
+        "en": "Cybersecurity Passionate Student"
     },
     "about.p1": {
         "fr": "Étudiant en 2ème année DUT à l'École Supérieure de Technologie de Guelmim, je combine une solide base théorique avec une capacité prouvée à développer des solutions logicielles pratiques (Python/Java) pour résoudre des problèmes réels.",
-        "en": "Second-year DUT student at the Higher School of Technology in Guelmim, I combine a solid theoretical foundation with proven ability to develop practical software solutions (Python/Java) to solve real-world problems."
+        "en": "2nd year DUT student at the Higher School of Technology of Guelmim, I combine a solid theoretical foundation with proven ability to develop practical software solutions (Python/Java) to solve real-world problems."
     },
     "about.p2": {
         "fr": "Mon expérience s'étend de la maintenance réseau en environnement institutionnel (Ministère de la Justice) à la participation active dans la communauté tech (CTF, Clubs). Rigoureux et polyvalent, je cherche à contribuer à la sécurisation et à l'optimisation des infrastructures IT.",
-        "en": "My experience ranges from network maintenance in an institutional environment (Ministry of Justice) to active participation in the tech community (CTF, Clubs). Rigorous and versatile, I seek to contribute to the security and optimization of IT infrastructures."
+        "en": "My experience ranges from network maintenance in an institutional environment (Ministry of Justice) to active participation in the tech community (CTF, Clubs). Rigorous and versatile, I aim to contribute to securing and optimizing IT infrastructure."
     },
     "about.name": {
         "fr": "Nom:",
@@ -112,8 +106,6 @@ const translations = {
         "fr": "Formation",
         "en": "Education"
     },
-    
-    // Education
     "education.skill1": {
         "fr": "Administration Linux/Windows",
         "en": "Linux/Windows Administration"
@@ -130,38 +122,38 @@ const translations = {
         "fr": "Développement Web & Logiciel",
         "en": "Web & Software Development"
     },
-    
-    // Skills Section
+
+    // ===== SKILLS SECTION =====
     "skills.title": {
         "fr": "Compétences Techniques",
         "en": "Technical Skills"
     },
     "skills.subtitle": {
-        "fr": "Un éventail de compétences en réseaux, sécurité et développement",
-        "en": "A range of skills in networks, security, and development"
+        "fr": "Compétences organisées par catégories",
+        "en": "Skills organized by categories"
     },
-    "skills.network": {
-        "fr": "Réseaux",
-        "en": "Networks"
-    },
-    "skills.security": {
-        "fr": "Sécurité",
-        "en": "Security"
+    "skills.networkSecurity": {
+        "fr": "Réseaux & Sécurité",
+        "en": "Network & Security"
     },
     "skills.development": {
         "fr": "Développement",
         "en": "Development"
     },
-    "skills.admin": {
-        "fr": "Administration",
-        "en": "Administration"
+    "skills.toolsSystems": {
+        "fr": "Outils & Systèmes",
+        "en": "Tools & Systems"
+    },
+    "skills.softSkills": {
+        "fr": "Soft Skills",
+        "en": "Soft Skills"
     },
     "skills.languages": {
         "fr": "Langues",
         "en": "Languages"
     },
-    
-    // Languages
+
+    // ===== LANGUAGES =====
     "languages.arabic": {
         "fr": "Arabe",
         "en": "Arabic"
@@ -180,18 +172,18 @@ const translations = {
     },
     "languages.native": {
         "fr": "Langue maternelle",
-        "en": "Native language"
+        "en": "Native"
     },
     "languages.fluent": {
-        "fr": "Courant (Professionnel)",
-        "en": "Fluent (Professional)"
+        "fr": "Professionnel",
+        "en": "Professional"
     },
     "languages.technical": {
         "fr": "Courant",
-        "en": "Fluent "
+        "en": "Fluent"
     },
-    
-    // Projects Section
+
+    // ===== PROJECTS SECTION =====
     "projects.title": {
         "fr": "Mes Projets",
         "en": "My Projects"
@@ -200,8 +192,10 @@ const translations = {
         "fr": "Une sélection de projets réalisés en cybersécurité et développement",
         "en": "A selection of projects in cybersecurity and development"
     },
-    
-    // Project 1
+    "projects.viewDetails": {
+        "fr": "Voir détails",
+        "en": "View details"
+    },
     "projects.project1.title": {
         "fr": "Système de Détection d'Intrusion (N-IDS)",
         "en": "Network Intrusion Detection System (N-IDS)"
@@ -210,8 +204,6 @@ const translations = {
         "fr": "Sonde réseau capable d'analyser le trafic en temps réel pour détecter les scans de ports et activités suspectes avec tableau de bord web.",
         "en": "Network probe capable of analyzing traffic in real time to detect port scans and suspicious activities with web dashboard."
     },
-    
-    // Project 2
     "projects.project2.title": {
         "fr": "Serveur de Messagerie Sécurisé",
         "en": "Secure Messaging Server"
@@ -220,8 +212,6 @@ const translations = {
         "fr": "Application Client-Serveur multi-threadée avec annuaire dynamique et chat instantané sécurisé.",
         "en": "Multi-threaded Client-Server application with dynamic directory and secure instant chat."
     },
-    
-    // Project 3
     "projects.project3.title": {
         "fr": "IP Fragmentation Calculator",
         "en": "IP Fragmentation Calculator"
@@ -230,18 +220,14 @@ const translations = {
         "fr": "Logiciel éducatif pour calculer et visualiser la fragmentation des paquets IP selon le MTU avec export de rapports.",
         "en": "Educational software to calculate and visualize IP packet fragmentation according to MTU with report export."
     },
-    
-    // Project 4
     "projects.project4.title": {
         "fr": "SSH vs Telnet & SDR Security",
         "en": "SSH vs Telnet & SDR Security"
     },
     "projects.project4.description": {
         "fr": "Analyse comparative de sécurité entre SSH et Telnet, exploration de la sécurité radio via Software Defined Radio.",
-        "en": "Comparative security analysis between SSH and Telnet, radio security exploration via Software Defined Radio."
+        "en": "Comparative security analysis between SSH and Telnet, exploration of radio security via Software Defined Radio."
     },
-    
-    // Project 5
     "projects.project5.title": {
         "fr": "Phone Shop & Repair Hub",
         "en": "Phone Shop & Repair Hub"
@@ -250,8 +236,34 @@ const translations = {
         "fr": "Plateforme web modulaire pour vente de smartphones et gestion des rendez-vous de réparation avec interface responsive.",
         "en": "Modular web platform for smartphone sales and repair appointment management with responsive interface."
     },
-    
-    // Project Features
+    "projects.project6.title": {
+        "fr": "Judicial Data Manager",
+        "en": "Judicial Data Manager"
+    },
+    "projects.project6.description": {
+        "fr": "Application desktop conçue pour calculer les dettes des avocats et générer automatiquement des documents juridiques.",
+        "en": "Desktop application designed to calculate lawyers' debts and automatically generate legal documents."
+    },
+    "projects.project6.context": {
+        "fr": "Court d'Appel",
+        "en": "Court of Appeal"
+    },
+    "projects.project6.tags.python": {
+        "fr": "Python",
+        "en": "Python"
+    },
+    "projects.project6.tags.sqlite": {
+        "fr": "SQLite",
+        "en": "SQLite"
+    },
+    "projects.project6.tags.desktop": {
+        "fr": "Desktop App",
+        "en": "Desktop App"
+    },
+    "projects.project6.tags.automation": {
+        "fr": "Automation",
+        "en": "Automation"
+    },
     "projects.features.realtime": {
         "fr": "Analyse en temps réel",
         "en": "Real-time analysis"
@@ -312,26 +324,27 @@ const translations = {
         "fr": "Design responsive",
         "en": "Responsive design"
     },
-    
-    "projects.viewDetails": {
-        "fr": "Voir détails",
-        "en": "View details"
+    "projects.features.automation": {
+        "fr": "Automatisation 100%",
+        "en": "100% Automation"
     },
-    
-    // Experience Section
+    "projects.features.timeReduction": {
+        "fr": "-60% temps traitement",
+        "en": "-60% processing time"
+    },
+
+    // ===== EXPERIENCE SECTION =====
     "experience.title": {
         "fr": "Expérience Professionnelle",
         "en": "Professional Experience"
     },
-    
-    // Job 1
     "experience.job1.title": {
         "fr": "Stagiaire IT & Développeur",
-        "en": "IT Intern & Developer"
+        "en": "IT & Developer Intern"
     },
     "experience.job1.description": {
-        "fr": "Conception et déploiement de l'application \"Judicial Data Manager\" pour automatiser la gestion des dettes et procédures.",
-        "en": "Design and deployment of the \"Judicial Data Manager\" application to automate debt and procedure management."
+        "fr": "Conception et déploiement de l'application 'Judicial Data Manager' pour automatiser la gestion des dettes et procédures.",
+        "en": "Design and deployment of the 'Judicial Data Manager' application to automate debt and procedure management."
     },
     "experience.job1.task1": {
         "fr": "Développement d'application desktop (Python/SQLite)",
@@ -347,10 +360,8 @@ const translations = {
     },
     "experience.job1.task4": {
         "fr": "Support technique aux fonctionnaires",
-        "en": "Technical support to officials"
+        "en": "Technical support for officials"
     },
-    
-    // Job 2
     "experience.job2.title": {
         "fr": "Agent d'Inventaire",
         "en": "Inventory Agent"
@@ -371,8 +382,6 @@ const translations = {
         "fr": "Organisation rigoureuse",
         "en": "Rigorous organization"
     },
-    
-    // Certifications
     "experience.certifications": {
         "fr": "Certifications & Formations",
         "en": "Certifications & Training"
@@ -414,8 +423,8 @@ const translations = {
         "en": "Moroccan Association of French Teachers"
     },
     "experience.cert4.title": {
-        "fr": "Compétiteur CTF - Challenge \"XMIRAGE\"",
-        "en": "CTF Competitor - \"XMIRAGE\" Challenge"
+        "fr": "Compétiteur CTF - Challenge 'XMIRAGE'",
+        "en": "CTF Competitor - 'XMIRAGE' Challenge"
     },
     "experience.cert4.date": {
         "fr": "Février 2025",
@@ -425,15 +434,15 @@ const translations = {
         "fr": "Club CyberDune",
         "en": "CyberDune Club"
     },
-    
-    // Contact Section
+
+    // ===== CONTACT SECTION =====
     "contact.title": {
         "fr": "Contactez-moi",
         "en": "Contact me"
     },
     "contact.subtitle": {
         "fr": "Disponible pour des opportunités en cybersécurité et administration réseau",
-        "en": "Available for opportunities in cybersecurity and network administration"
+        "en": "Available for cybersecurity and network administration opportunities"
     },
     "contact.email": {
         "fr": "Email",
@@ -451,8 +460,6 @@ const translations = {
         "fr": "Suivez-moi",
         "en": "Follow me"
     },
-    
-    // Contact Form
     "contact.form.name": {
         "fr": "Votre nom",
         "en": "Your name"
@@ -473,29 +480,14 @@ const translations = {
         "fr": "Envoyer le message",
         "en": "Send message"
     },
-    
-    // Footer
+
+    // ===== FOOTER =====
     "footer.description": {
-        "fr": "Technicien Supérieur en Réseaux Informatiques et Sécurité, passionné par l'innovation et la sécurité informatique.",
-        "en": "Senior Technician in Computer Networks and Security, passionate about innovation and computer security."
+        "fr": "Étudiant en Réseaux Informatiques et Sécurité, passionné par l'innovation et la sécurité informatique.",
+        "en": "Computer Networks and Security Student, passionate about innovation and computer security."
     },
     "footer.copyright": {
         "fr": "© 2026 Abderrahmane Aroussi. Tous droits réservés.",
         "en": "© 2026 Abderrahmane Aroussi. All rights reserved."
-    },
-    
-    // Modal
-    "modal.success": {
-        "fr": "Message envoyé avec succès!",
-        "en": "Message sent successfully!"
-    },
-    "modal.thanks": {
-        "fr": "Merci pour votre message. Je vous répondrai dans les plus brefs délais.",
-        "en": "Thank you for your message. I will respond to you as soon as possible."
-    },
-    "modal.close": {
-        "fr": "Fermer",
-        "en": "Close"
     }
-
 };
